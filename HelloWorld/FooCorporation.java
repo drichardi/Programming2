@@ -7,7 +7,7 @@ public class FooCorporation {
     
     public static void Pay(double basePay, double hoursWorked) {
         if( basePay < MINIMUM_WAGE ) {
-            System.out.printf( "Error. Base pay must be equal to or above $%.2f\n", MINIMUM_WAGE);
+            System.out.printf( "Error. Base pay must be equal to or above $%.2f.\n", MINIMUM_WAGE);
         } 
         else if( hoursWorked <= REGULAR_PAY_HOURS) {
             System.out.printf( "Total pay: $%.2f.\n", hoursWorked * basePay);
@@ -23,8 +23,8 @@ public class FooCorporation {
     }
     public static void main(String[] args) {
         Pay(7.50, 35);
-        Pay(9.00, 38);
-        Pay(8.20, 52);
+        Pay(9.00, 38.5);
+        Pay(8.20, 47);
         Pay(10.00, 73);
         
     }
